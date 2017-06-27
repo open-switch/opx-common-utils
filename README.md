@@ -7,4 +7,4 @@ This repository contains a utilities library used by the OPX project for thread 
 
 See [Architecture](https://github.com/open-switch/opx-docs/wiki/Architecture) for more information on the common utilities module.
 
-(c) 2017 Dell
+(c) 2017 Dell EMC
