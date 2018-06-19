@@ -9,4 +9,4 @@ The API that starts, stops, and the infrastructure for events are in the _event_
 
 See [Architecture](https://github.com/open-switch/opx-docs/wiki/Architecture) for more information on the common utilities module.
 
-(c) 2017 Dell EMC
+(c) 2018 Dell Inc. or its subsidiaries. All Rights Reserved.
