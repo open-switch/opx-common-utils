@@ -1,8 +1,16 @@
+opx-common-utils (1.5.0+opx2) unstable; urgency=medium
+
+  * Update: Use static-inline instead of macro for IPv4 link-local address
+            checker
+  * Bugfix: Fix debian changelog warnings during build
+
+ -- Dell EMC <ops-dev@lists.openswitch.net>  Tue, 21 Aug 2018 11:00:00 -0800
+
 opx-common-utils (1.5.0+opx1) unstable; urgency=medium
 
-  * Update: Add support for BGP IPv4 Unnumbering
+  * Update: Add API to check IPv4 link-local address for BGP IPv4 Unnumbered
 
- -- Dell EMC <ops-dev@lists.openswitch.net> Mon, 13 Aug 2018 11:00:00 -0800
+ -- Dell EMC <ops-dev@lists.openswitch.net>  Mon, 13 Aug 2018 11:00:00 -0800
 
 opx-common-utils (1.5.0) unstable; urgency=medium
 
@@ -12,14 +20,14 @@ opx-common-utils (1.5.0) unstable; urgency=medium
   * Update: Handle system call error codes, rename
   * Update: New Cond var defer_for api
 
- -- Dell EMC <ops-dev@lists.openswitch.net> Tue, 22 May 2018 11:00:00 -0800
+ -- Dell EMC <ops-dev@lists.openswitch.net>  Tue, 22 May 2018 11:00:00 -0800
 
 opx-common-utils (1.4.1) unstable; urgency=medium
 
   * Update: Wrapper for Pthread condition var timed wait with Monotonic clock
   * Update: Handling deprecation of readdir_r without effecting the Jessie build
 
- -- Dell EMC <ops-dev@lists.openswitch.net> Tue, 13 Feb 2018 11:00:00 -0800
+ -- Dell EMC <ops-dev@lists.openswitch.net>  Tue, 13 Feb 2018 11:00:00 -0800
 
 opx-common-utils (1.4.0) unstable; urgency=medium
 
@@ -33,20 +41,20 @@ opx-common-utils (1.4.0) unstable; urgency=medium
   * Bugfix: xmlGetProp memory leak
   * Bugfix: log levels
 
- -- Dell EMC <ops-dev@lists.openswitch.net> Tue, 05 Dec 2017 11:00:00 -0800
+ -- Dell EMC <ops-dev@lists.openswitch.net>  Tue, 05 Dec 2017 11:00:00 -0800
 
 opx-common-utils (1.3.5) unstable; urgency=medium
 
   * Update: Added VXLAN id type
   * Bugfix: Minor fixes
 
- -- Dell EMC <ops-dev@lists.openswitch.net> Fri, 06 Oct 2017 11:00:00 -0800
+ -- Dell EMC <ops-dev@lists.openswitch.net>  Fri, 06 Oct 2017 11:00:00 -0800
 
 opx-common-utils (1.3.0) unstable; urgency=medium
 
   * Update: Adding IOV support for reading/writing file descriptors
 
- -- Dell EMC <ops-dev@lists.openswitch.net> Mon, 19 May 2017 13:31:57 -0700
+ -- Dell EMC <ops-dev@lists.openswitch.net>  Mon, 19 May 2017 13:31:57 -0700
 
 opx-common-utils (1.0.1) unstable; urgency=medium
 

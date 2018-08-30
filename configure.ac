@@ -2,7 +2,7 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ([2.69])
-AC_INIT([opx-common-utils], [1.5.0+opx1], [ops-dev@lists.openswitch.net])
+AC_INIT([opx-common-utils], [1.5.0+opx2], [ops-dev@lists.openswitch.net])
 
 AC_CONFIG_HEADERS([config.h])
 AC_CONFIG_MACRO_DIRS([m4])
@@ -14,6 +14,7 @@ AC_PROG_CXX
 AC_PROG_CC
 AC_PROG_INSTALL
 LT_INIT([shared])
+AM_MAINTAINER_MODE([enable])
 
 # Checks for libraries.
 AC_CHECK_LIB([dl], [dlopen])
