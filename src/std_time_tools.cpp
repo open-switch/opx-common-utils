@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2019  Dell Inc.
+ * Copyright (c) 2019 Dell Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License"); you may
  * not use this file except in compliance with the License. You may obtain
@@ -15,15 +15,13 @@
  */
 
 /*
- * filename: std_time_tools.c
+ * filename: std_time_tools.cpp
  */
-
-
-#include "std_time_tools.h"
-#include "std_error_codes.h"
-
-#include <unistd.h>
+#include <std_time_tools.h>
+#include <std_error_codes.h>
 #include <time.h>
+#include <chrono>
+#include <unistd.h>
 
 
 #ifdef CLOCK_MONOTONIC_RAW
@@ -74,6 +72,7 @@ bool std_time_is_expired(uint64_t before, uint64_t time_in_ms) {
 #define MILLISEC_IN_A_SEC (1000)
 #define NANOSEC_IN_A_SEC (1000 * 1000 * 1000)
 
+
 void std_time_get_monotonic_clock (size_t interval_in_ms, struct timespec* clock_time)
 {
     clock_gettime(CLOCK_MONOTONIC, clock_time);
@@ -90,3 +89,8 @@ void std_time_get_monotonic_clock (size_t interval_in_ms, struct timespec* clock
     clock_time->tv_sec += (MILLISEC_TO_SEC (interval_in_ms) + overflow);
 }
 
+uint64_t std_time_get_current_from_epoch_in_nanoseconds(){
+    using namespace std::chrono;
+    nanoseconds ns = duration_cast<nanoseconds>(system_clock::now().time_since_epoch());
+    return ns.count();
+}
